@@ -1,0 +1,11 @@
+{
+  "login_header" : "Login",
+  "username" : "Email address",
+  "Password" : "Password",
+  "forget_password" : "forget password",
+  "submit_button" : "Log in",
+  "login_errmsg" : "The username or password is not correct",
+  "logout_msg" : "You have been successfully logged out",
+  "email_errmsg" : "Please enter your username",
+  "password_errmsg" : "Please enter your password"
+}
