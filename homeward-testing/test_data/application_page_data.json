@@ -1,0 +1,38 @@
+{
+  "situation" :   {
+                      "title_bar" : [
+                                      "Situation",
+                                      "Property details",
+                                      "Valuation",
+                                      "Floor Price"
+                      ],
+                    "Customer status" : {
+                                          "Move by date" : [],
+                                          "Customer reported stage" : [
+                                                      "Researching online",
+                                                      "Viewing listing in person",
+                                                      "Making an offer",
+                                                      "Working with a builder"
+                                         ],
+                                          "Target move in date" : [
+                                                       "0-3 months",
+                                                       "3-6 months",
+                                                       "6-12 months",
+                                                       "I'm unsure",
+                                                       "By a specific date"
+                                         ]
+                    },
+                    "Listing details" : [ 
+                                          "Home being sold",
+                                          "Outstanding loan amount",
+                                          "Home value opinion"
+                    ],
+                    "Buying details" : [
+                                            "Home shopping city",
+                                            "price range",
+                                            "Offer property address",
+                                            "Builder's name",
+                                            "Builder's address"
+                     ]
+                  }
+}

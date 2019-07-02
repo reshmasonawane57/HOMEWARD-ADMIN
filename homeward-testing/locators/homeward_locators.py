@@ -13,6 +13,7 @@ class Homeward_Locator(object):
 
     ################# Situation Page ####################
 
+    whole_page = (By.XPATH, '/html/body')
     table_row = (By.XPATH, '//table[contains(@class,"table")]/tbody/tr[2]')
     page_header = (By.XPATH, '//h1[contains(@class,"page-title")]')
     customer_reported_stage = (By.XPATH, '//div[contains(text(),"Customer reported stage")]//following::div[4]')
@@ -38,9 +39,16 @@ class Homeward_Locator(object):
     buying_details_field3 = (By.XPATH, '//div[contains(text(),"Offer property address")]')
     buying_details_field4 = (By.XPATH, '//div[contains(text(),"Builder\'s name")]')
     buying_details_field5 = (By.XPATH, '//div[contains(text(),"Builder\'s address")]')
+    min_max_error = (By.XPATH, '//small[contains(@class,"text-danger")]')
     home_being_sold = (By.XPATH, '//div[contains(text(),"Home being sold")]//following::div[2]/input')
     outstanding_loan_amount = (By.XPATH, '//input[contains(@name,"outstanding_loan_amount")]')
+    home_shopping_city = (By.XPATH, '//input[contains(@id,"shopping_location")]')
     home_value_opinion = (By.XPATH, '//input[contains(@name,"customer_home_value_opinion")]')
+    min_price = (By.XPATH, '//input[contains(@name,"min_price")]')
+    max_price = (By.XPATH, '//input[contains(@name,"max_price")]')
+    offer_property_address = (By.XPATH, '//input[contains(@id,"offer_property_address")]')
+    builders_name = (By.XPATH,'//input[contains(@name,"builders_company_name")]')
+    builders_addr = (By.XPATH, '//input[contains(@id,"builders_address")]')
 
     cta_footer_bar = (By.XPATH, '//div[contains(@class,"form-grey-panel-button")]')
     cancel_button = (By.XPATH, '//button[contains(text(),"Cancel")]')
