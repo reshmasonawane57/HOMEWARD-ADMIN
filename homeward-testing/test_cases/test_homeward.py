@@ -4,7 +4,7 @@ import unittest
 import time
 from selenium import webdriver
 from login import Login
-#from situation_page import Situation
+from situation_page import Situation
 
 class Homeward_Test(unittest.TestCase):
 
@@ -17,8 +17,8 @@ class Homeward_Test(unittest.TestCase):
     def test_homeward(self):
         login_page = Login(self.driver)
         login_page.check_login()
-        #situation_func = Situation(self.driver)
-        #situation_func.check_situation()
+        situation_func = Situation(self.driver)
+        situation_func.check_situation()
         return
 
 

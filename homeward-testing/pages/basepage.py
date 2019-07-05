@@ -1,6 +1,10 @@
+import sys
+sys.path.append('../locators')
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common import action_chains
 from selenium.webdriver.common.keys import Keys
+from homeward_locators import Homeward_Locator
 from datetime import date
 import json
 import time
@@ -19,6 +23,30 @@ class BasePage(object):
         elem = self.driver.find_element(*locator)
         elem_list = elem.find_elements_by_tag_name(child_elem)
         return elem_list
+    
+    def is_by_specific_date(self):
+        today = date.today()
+        current_date = today.strftime("%B %d, %Y")
+        assert(self.element_text(Homeward_Locator.customer_status_field3) == "Move by date")
+        self.element_click(Homeward_Locator.move_by_date)
+        self.element_click(Homeward_Locator.calendar)
+        time.sleep(3)
+        self.get_calendar(Homeward_Locator.month_and_year, Homeward_Locator.prev_year, Homeward_Locator.prev_month,
+                Homeward_Locator.next_year,Homeward_Locator.next_month, Homeward_Locator.date_calendar,1)
+        
+        self.is_cta_confirm_cancel_bar()
+        time.sleep(3)
+        return
+    
+    def is_cta_confirm_cancel_bar(self):
+        try:
+            assert(self.element_display(Homeward_Locator.cancel_button))
+            assert(self.element_display(Homeward_Locator.confirm_button))
+            assert(self.element_disable(Homeward_Locator.cancel_button))
+            assert(self.element_disable(Homeward_Locator.confirm_button))
+            self.element_click(Homeward_Locator.confirm_button)
+        except:
+            print("Cancel and Confirm footer is expected")
 
 
     def send_data(self, locator, data):

@@ -34,5 +34,50 @@
                                             "Builder's name",
                                             "Builder's address"
                      ]
-                  }
+                  },
+  "Property_details" : {
+                          "Bedrooms & Living spaces" : [
+                                                           "Number of floors",
+                                                           "Number of bedrooms",
+                                                           "Master bedroom on main floor",
+                                                           "Square footage",
+                                                           "Permit status",
+                                                           "Added square footage"
+                          ],
+                          "Kitchen & Baths" : [
+                                                        "Countertop type",
+                                                        "Appliance type",
+                                                        "Kitchen features",
+                                                        "Kitchen remodel",
+                                                        "Kitchen condition",
+                                                        "Master bathroom features",
+                                                        "Master bathroom remodel",
+                                                        "Master bathroom condition",
+                                                        "Full bathrooms",
+                                                        "Partial bathrooms"
+                          ],
+                          "Walls & Flooring" : [
+                                                        "Interior walls condition",
+                                                        "Neutral paint colors in common area",
+                                                        "Floor type",
+                                                        "Hardwood condition",
+                                                        "Carpet condition"
+                          ],
+                          "Exteriors" : [
+                                                        "Front yard condition",
+                                                        "Back yard condition",
+                                                        "Exterior walls type",
+                                                        "Sides with masonary",
+                                                        "Roof age",
+                                                        "Pool type",
+                                                        "Garage spaces"
+                          ],
+                          "Other" : [
+                                                        "HVAC age",
+                                                        "Other home situations",
+                                                        "Property in floodzone",
+                                                        "Relationship to home",
+                                                        "Customer's home value opinion"
+                          ]
+  }
 }
